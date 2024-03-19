@@ -76,6 +76,19 @@ def display_city_distribution(i: int):
                     labels={'zipcode': 'City', 'count': 'Count'})
     st.plotly_chart(fig_city, use_container_width=True)
 
+def refresh_data():
+    """
+   Refreshes data and figures.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
+    barriers.updateData()
+    st.sidebar.success("Data refreshed successfully.")
+
 # Load data and update if necessary
 barriers = BarrierReferralData()
 barriers.updateData()
@@ -120,21 +133,32 @@ st.title('Barrier Referral Data Analysis')
 i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
 i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=10)
 
+def run_figures():
 # Display top values
-display_top_barriers(i)
+    display_top_barriers(i)
 
-st.plotly_chart(fig_ethnicity, use_container_width=True)
+    st.plotly_chart(fig_ethnicity, use_container_width=True)
 
-st.plotly_chart(fig_sex, use_container_width=True)
+    st.plotly_chart(fig_sex, use_container_width=True)
 
-st.plotly_chart(fig_age, use_container_width=True)
+    st.plotly_chart(fig_age, use_container_width=True)
 
-# Display city distribution
-display_city_distribution(i_city)
+    # Display city distribution
+    display_city_distribution(i_city)
 
-st.plotly_chart(fig_solution, use_container_width=True)
+    st.plotly_chart(fig_solution, use_container_width=True)
 
-st.dataframe(barriers.barriers) 
+    st.dataframe(barriers.barriers) 
+
+# Refresh button in the sidebar
+if st.sidebar.button("Refresh Data"):
+    refresh_data()
+    run_figures()
+
+run_figures()
 
 # Load button in sidebar
 load_csv_data(barriers.barriers)
+
+# Link to Barrier Log
+st.sidebar.markdown("[Barrier Log Link](https://form.jotform.com/240215836883158)")
