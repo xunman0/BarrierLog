@@ -31,7 +31,7 @@ app.py:
 - Contains the Plotly plots and logic for Streamlit App
 
 ### Note: 
-- Jotform credential/secrets are stored in Streamlit's secure deployment environment within a .toml file.
+- Jotform credentials/secrets are stored in Streamlit's secure deployment environment within a .toml file.
 - Jotform Account Expires July 2024 (application functionality will depend on this).
-- This is not academic research nor aims to be statistically significant findings with rigorous methodology
+- This is not academic research nor aims to make statistically significant findings with rigorous methodology
 - The main goal of this initiative is for exploration of the lived experiences of OC's community with respect to healthcare barriers and children with IDD/MH 
