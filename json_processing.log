@@ -1,0 +1,732 @@
+2024-03-19 12:43:54 - DEBUG - 1055 - Starting new HTTPS connection (1): hipaa-api.jotform.com:443
+2024-03-19 12:43:55 - DEBUG - 549 - https://hipaa-api.jotform.com:443 "GET /form/240215836883158/submissions?apiKey=c6bdeaaa1d7d4ecf057c80dfff418a7f HTTP/1.1" 200 None
+2024-03-19 12:43:55 - DEBUG - 111 - Succesfully retrieved data. Status code: 200
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 03-08-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 03-06-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 03-02-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 03-01-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-02-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-14-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 192 - Added date : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 343 - Added org : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 347 - Added staff : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 352 - Added staff email : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 356 - Added staff from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 376 - Added family contacat from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 380 - Added address from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 384 - Added family phone from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 388 - Added family email from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 408 - Added barrier memo from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 412 - Added barrier list item from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 416 - Added cause to barrier from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 420 - Added solution to barrier from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 424 - Added solution pathway list item from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 444 - Added zipcode from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 448 - Added age from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 455 - Added sex from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 462 - Added ethnicity from form : 02-13-2024
+2024-03-19 12:43:55 - DEBUG - 241 - Updated the data from API.
+2024-03-19 12:43:55 - DEBUG - 83 - Updated the data from API.
+2024-03-19 12:43:55 - DEBUG - 1055 - Starting new HTTPS connection (1): hipaa-api.jotform.com:443
+2024-03-19 12:43:55 - DEBUG - 549 - https://hipaa-api.jotform.com:443 "GET /form/240215836883158/submissions?apiKey=c6bdeaaa1d7d4ecf057c80dfff418a7f HTTP/1.1" 200 None
+2024-03-19 12:43:55 - DEBUG - 111 - Succesfully retrieved data. Status code: 200
+2024-03-19 12:43:55 - DEBUG - 1055 - Starting new HTTPS connection (1): hipaa-api.jotform.com:443
+2024-03-19 12:43:56 - DEBUG - 549 - https://hipaa-api.jotform.com:443 "GET /form/240215836883158/submissions?apiKey=c6bdeaaa1d7d4ecf057c80dfff418a7f HTTP/1.1" 200 None
+2024-03-19 12:43:56 - DEBUG - 111 - Succesfully retrieved data. Status code: 200
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 03-08-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 03-06-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 03-02-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 03-01-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-23-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-02-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 01-19-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-14-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 192 - Added date : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 343 - Added org : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 347 - Added staff : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 352 - Added staff email : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 356 - Added staff from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 376 - Added family contacat from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 380 - Added address from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 384 - Added family phone from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 388 - Added family email from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 408 - Added barrier memo from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 412 - Added barrier list item from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 416 - Added cause to barrier from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 420 - Added solution to barrier from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 424 - Added solution pathway list item from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 444 - Added zipcode from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 448 - Added age from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 455 - Added sex from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 462 - Added ethnicity from form : 02-13-2024
+2024-03-19 12:43:56 - DEBUG - 241 - Updated the data from API.
