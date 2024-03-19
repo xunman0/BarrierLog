@@ -9,13 +9,14 @@ a quantifiable way while also referring families to our advocacy group
 
 # Data Collection
 - Anyone who witnessess an incident of system barriers is encouraged to fill out this barrier log
-- Individuals fillinf out the log include but are not limited to:
+- Individuals filling out the log include but are not limited to:
   - Family/Caregivers
   - Social workers
   - Therapists (Behavioral/Speech/Occupational/Physical/Mental)
   - Medical Personnel (Physicians/Nurses/etc)
   - Community Navigators
-  - CBO's
+  - CBO Leaders/Staff
+  - RCOC Staff
 
 # Goal
 - Begin to identify and understand the barriers of the target population
