@@ -4,6 +4,10 @@ import re
 import logging
 import os
 import ast
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # constants for dynamic parsing
 JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Family Contact Name', 
@@ -12,9 +16,8 @@ JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Fam
                   'Solution to Barrier (optional)', 'Solution Pathway to Barrier (optional)', 
                   'Referring Staff Email', 'Referring Staff Phone Number', 'Submission Type',
                     'Age', 'Sex', 'Ethnicity', 'Zipcode']
-API_KEY = ''
-FORM_ID = 
-
+API_KEY = os.getenv('API_KEY')
+FORM_ID = os.getenv('FORM_ID')
 
 
 # Create a logger instance

@@ -10,6 +10,7 @@ uszipcode = "*"
 streamlit = "*"
 ipykernel = "*"
 nbformat = "*"
+python-dotenv = "*"
 
 [dev-packages]
 ipykernel = "*"
