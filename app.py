@@ -12,7 +12,6 @@ def display_top_barriers(i: int, col: str = 'barrier_list'):
     Args:
         i (int): Number of top barriers to display.
         col (str): Column name to consider for displaying top barriers.
-
     Returns:
         None
     """
@@ -21,13 +20,12 @@ def display_top_barriers(i: int, col: str = 'barrier_list'):
     st.write(top_values)
 
 
-def zco(x):
+def zco(x: str) -> str:
     """
     Get the city name from the zip code.
 
     Args:
         x (int): Zip code.
-
     Returns:
         str: City name or the zip code if city name is not found.
     """
@@ -37,13 +35,12 @@ def zco(x):
     except AttributeError:
         return x
 
-def load_csv_data(df):
+def load_csv_data(df: pd.DataFrame):
     """
     Generate a download button to download data as a CSV file.
 
     Args:
         df (pandas.DataFrame): DataFrame to be converted to CSV.
-
     Returns:
         None
     """
@@ -65,7 +62,6 @@ def display_city_distribution(i: int):
 
     Args:
         i (int): Number of cities to display in the distribution.
-
     Returns:
         None
     """
@@ -78,63 +74,27 @@ def display_city_distribution(i: int):
 
 def refresh_data():
     """
-   Refreshes data and figures.
+    Refreshes data and figures.
 
     Args:
         None
-
     Returns:
         None
     """
     barriers.updateData()
     st.sidebar.success("Data refreshed successfully.")
 
-# Load data and update if necessary
-barriers = BarrierReferralData()
-barriers.updateData()
+def plot_all_figures():
+    """
+    Plots all the figures defined with Plotly. These commans are wrapped in a 
+    function to be able to refresh both the data and the figures.
 
-# Top Solution Pathways
-top_solution_data = barriers.topValues('solution_path', 10)
-fig_solution = px.bar(top_solution_data, x=top_solution_data.index, y=top_solution_data.values,
-                      labels={'y': 'Count', 'index': ' '}, 
-                      title='Top Solution Pathways')
-
-# Ethnicity Distribution
-ethnicity_counts = barriers.barriers['ethnicity'].value_counts().reset_index()
-ethnicity_counts.columns = ['ethnicity', 'count']
-fig_ethnicity = px.pie(ethnicity_counts, names='ethnicity', values='count',
-                       title='Ethnicity Distribution',
-                       labels={'ethnicity': 'Ethnicity', 'count': 'Count'},
-                       hole=0.3)
-fig_ethnicity.update_traces(textinfo='percent+label', pull=[0.1] * len(ethnicity_counts))
-
-# Sex Distribution
-sex_counts = barriers.barriers['sex'].value_counts().reset_index()
-sex_counts.columns = ['sex', 'count']
-fig_sex = px.pie(sex_counts, names='sex', values='count',
-                 title='Sex Distribution',
-                 labels={'sex': 'Sex', 'count': 'Count'},
-                 hole=0.3)
-fig_sex.update_traces(textinfo='percent+label', pull=[0.1] * len(sex_counts))
-
-# Age Distribution
-age_distribution = barriers.barriers['age'].value_counts().sort_index().reset_index()
-age_distribution.columns = ['age', 'count']
-fig_age = px.bar(age_distribution, x='age', y='count',
-                 title='Age Distribution',
-                 labels={'age': 'Age', 'count': 'Count'},
-                 hover_data=['age', 'count'],
-                 category_orders={"age": list(range(26))})
-
-# Streamlit App
-st.title('Barrier Referral Data Analysis')
-
-# Sidebar for user input
-i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
-i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=10)
-
-def run_figures():
-# Display top values
+    Args:
+        None
+    Returns:
+        None
+    """
+    # Display top barriers
     display_top_barriers(i)
 
     st.plotly_chart(fig_ethnicity, use_container_width=True)
@@ -150,12 +110,56 @@ def run_figures():
 
     st.dataframe(barriers.barriers) 
 
+# Load data and update if necessary
+barriers = BarrierReferralData()
+barriers.updateData()
+
+# Get top Solution Pathways and create figure
+top_solution_data = barriers.topValues('solution_path', 10)
+fig_solution = px.bar(top_solution_data, x=top_solution_data.index, y=top_solution_data.values,
+                      labels={'y': 'Count', 'index': ' '}, 
+                      title='Top Solution Pathways')
+
+# Get ethnicity Distribution and create figure
+ethnicity_counts = barriers.barriers['ethnicity'].value_counts().reset_index()
+ethnicity_counts.columns = ['ethnicity', 'count']
+fig_ethnicity = px.pie(ethnicity_counts, names='ethnicity', values='count',
+                       title='Ethnicity Distribution',
+                       labels={'ethnicity': 'Ethnicity', 'count': 'Count'},
+                       hole=0.3)
+fig_ethnicity.update_traces(textinfo='percent+label', pull=[0.1] * len(ethnicity_counts))
+
+# Get sex Distribution and create figure
+sex_counts = barriers.barriers['sex'].value_counts().reset_index()
+sex_counts.columns = ['sex', 'count']
+fig_sex = px.pie(sex_counts, names='sex', values='count',
+                 title='Sex Distribution',
+                 labels={'sex': 'Sex', 'count': 'Count'},
+                 hole=0.3)
+fig_sex.update_traces(textinfo='percent+label', pull=[0.1] * len(sex_counts))
+
+# Get age Distribution and create figure
+age_distribution = barriers.barriers['age'].value_counts().sort_index().reset_index()
+age_distribution.columns = ['age', 'count']
+fig_age = px.bar(age_distribution, x='age', y='count',
+                 title='Age Distribution',
+                 labels={'age': 'Age', 'count': 'Count'},
+                 hover_data=['age', 'count'],
+                 category_orders={"age": list(range(26))})
+
+# Streamlit App Title (App components starts here)
+st.title('Barrier Referral Data Analysis')
+
+# Sidebar for user input
+i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
+i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=10)
+
 # Refresh button in the sidebar
 if st.sidebar.button("Refresh Data"):
     refresh_data()
-    run_figures()
+    plot_all_figures()
 
-run_figures()
+plot_all_figures()
 
 # Load button in sidebar
 load_csv_data(barriers.barriers)
