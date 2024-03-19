@@ -5,21 +5,48 @@ import plotly.express as px
 from uszipcode import SearchEngine
 search = SearchEngine()
 
-def display_top_values(col, i):
+def display_top_barriers(i: int, col: str = 'barrier_list'):
+    """
+    Display the top barriers based on the specified column.
+    
+    Args:
+        i (int): Number of top barriers to display.
+        col (str): Column name to consider for displaying top barriers.
+
+    Returns:
+        None
+    """
     top_values = barriers.topValues(col, i)
     st.write(f'##### Top {i} Barriers')
     st.write(top_values)
 
-# Function to handle cases where major city lookup fails
+
 def zco(x):
+    """
+    Get the city name from the zip code.
+
+    Args:
+        x (int): Zip code.
+
+    Returns:
+        str: City name or the zip code if city name is not found.
+    """
     try:
         city = search.by_zipcode(x).major_city
         return city 
     except AttributeError:
         return x
 
-# Function to load CSV data and create download button
 def load_csv_data(df):
+    """
+    Generate a download button to download data as a CSV file.
+
+    Args:
+        df (pandas.DataFrame): DataFrame to be converted to CSV.
+
+    Returns:
+        None
+    """
     @st.cache_data
     def convert_df(df):
        return df.to_csv(index=False).encode('utf-8')
@@ -32,6 +59,22 @@ def load_csv_data(df):
         key='download-csv'
     )
 
+def display_city_distribution(i: int):
+    """
+    Display the distribution of cities based on the number of barriers.
+
+    Args:
+        i (int): Number of cities to display in the distribution.
+
+    Returns:
+        None
+    """
+    city_counts = barriers.barriers['zipcode'].apply(zco).astype('string').value_counts().reset_index()[:i]
+    city_counts.columns = ['zipcode', 'count']
+    fig_city = px.bar(city_counts, x='zipcode', y='count',
+                    title='City Distribution',
+                    labels={'zipcode': 'City', 'count': 'Count'})
+    st.plotly_chart(fig_city, use_container_width=True)
 
 # Load data and update if necessary
 barriers = BarrierReferralData()
@@ -70,15 +113,6 @@ fig_age = px.bar(age_distribution, x='age', y='count',
                  hover_data=['age', 'count'],
                  category_orders={"age": list(range(26))})
 
-# City Distribution
-def display_city_distribution(i: int):
-    city_counts = barriers.barriers['zipcode'].apply(zco).astype('string').value_counts().reset_index()[:i]
-    city_counts.columns = ['zipcode', 'count']
-    fig_city = px.bar(city_counts, x='zipcode', y='count',
-                    title='City Distribution',
-                    labels={'zipcode': 'City', 'count': 'Count'})
-    st.plotly_chart(fig_city, use_container_width=True)
-
 # Streamlit App
 st.title('Barrier Referral Data Analysis')
 
@@ -87,7 +121,7 @@ i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
 i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=10)
 
 # Display top values
-display_top_values('barrier_list', i)
+display_top_barriers(i)
 
 st.plotly_chart(fig_ethnicity, use_container_width=True)
 
@@ -95,10 +129,12 @@ st.plotly_chart(fig_sex, use_container_width=True)
 
 st.plotly_chart(fig_age, use_container_width=True)
 
+# Display city distribution
 display_city_distribution(i_city)
 
 st.plotly_chart(fig_solution, use_container_width=True)
 
 st.dataframe(barriers.barriers) 
 
+# Load button in sidebar
 load_csv_data(barriers.barriers)
