@@ -1,6 +1,6 @@
 # [Hosted Streamlit App](https://barrierlogoc.streamlit.app)
 # Background
-- Families in Orange County with children having intellectual or developmental disabilities/mental health (IDD/MH) diagnosis face an overwhelming amount of barriers to resources and support access
+- Families in Orange County with children having an intellectual or developmental disabilities/mental health (IDD/MH) diagnosis face an overwhelming amount of barriers to resources and support access
 - Despite expressed challenges, healthcare leadership has dismissed the need for significant system changes
 - The Advocacy for People with Disabilities project involves 30+ families sharing experiences, identifying barriers, and undergoing advocacy training
 - The first phase involved collecting testimonies, resulting in a comprehensive list of identified barriers from their lived experiences
