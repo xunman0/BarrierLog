@@ -12,8 +12,8 @@ JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Fam
                   'Solution to Barrier (optional)', 'Solution Pathway to Barrier (optional)', 
                   'Referring Staff Email', 'Referring Staff Phone Number', 'Submission Type',
                     'Age', 'Sex', 'Ethnicity', 'Zipcode']
-API_KEY = 'c6bdeaaa1d7d4ecf057c80dfff418a7f'
-FORM_ID = 240215836883158
+API_KEY = ''
+FORM_ID = 
 
 
 
