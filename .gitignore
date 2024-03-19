@@ -1,3 +1,4 @@
 .env
 *.ipynb
 dev_barrierReferralData.py
+*.csv
