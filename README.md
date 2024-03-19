@@ -8,7 +8,6 @@ a quantifiable way while also referring families to our advocacy group
 
 # Goal
 - Begin to identify and understand the barriers of the target population
-- Refer families to our parent-family participatory advocacy group
 - Create a dataset than can be presented to OC leadership to acknowledge and expose the reality that their community is facing
 - Track/analyze data for future research and use
 
@@ -23,3 +22,5 @@ app.py:
 Note: Jotform secrets are stored in Streamlit's secure deployment environment within a .toml file. 
 
 [Barrier Log Link](https://form.jotform.com/240215836883158)
+
+Jotform Account Expires July 2024 (application functionality will depend on this).
