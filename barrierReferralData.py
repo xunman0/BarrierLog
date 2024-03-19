@@ -13,8 +13,8 @@ JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Fam
                   'Solution to Barrier (optional)', 'Solution Pathway to Barrier (optional)', 
                   'Referring Staff Email', 'Referring Staff Phone Number', 'Submission Type',
                     'Age', 'Sex', 'Ethnicity', 'Zipcode']
-st.write("API Key:", st.secrets["API_KEY"])
-st.write("Form ID:", st.secrets["FORM_ID"])
+API_KEY = st.write("API Key:", st.secrets["API_KEY"])
+FORM_ID = st.write("Form ID:", st.secrets["FORM_ID"])
 
 
 
