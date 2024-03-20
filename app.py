@@ -148,7 +148,7 @@ fig_age = px.bar(age_distribution, x='age', y='count',
                  category_orders={"age": list(range(26))})
 
 # Streamlit App Title (App components starts here)
-st.title('Barrier Referral Data Analysis')
+st.title('Orange County Healthcare Barriers for Children w/ IDD/MH')
 
 # Sidebar for user input
 i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
