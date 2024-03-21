@@ -8,7 +8,7 @@
 a quantifiable way while also referring families to our advocacy group
 
 # Data Collection
-- Anyone who witnessess an incident of system barriers is encouraged to fill out this [barrier log](st.markdown("[More information and context about this data.](https://form.jotform.com/240215836883158)
+- Anyone who witnessess an incident of system barriers is encouraged to fill out this [barrier log](https://form.jotform.com/240215836883158)
 - Individuals filling out the log include but are not limited to:
   - Family/Caregivers
   - Social workers
