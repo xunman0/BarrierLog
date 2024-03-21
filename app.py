@@ -123,11 +123,10 @@ def main():
     # Streamlit App Title (App components starts here)
     st.title('Orange County Healthcare Barriers for Children w/ IDD/MH')
 
-    st.markdown("[More information and context about this data.](https://github.com/jairus-m/barrierLog/blob/master/README.md)")
-
-
     # Link to Barrier Log
     st.sidebar.markdown("[Barrier Log Link](https://form.jotform.com/240215836883158)")
+    st.sidebar.markdown("[More information and context about this data.](https://github.com/jairus-m/barrierLog/blob/master/README.md)")
+    
 
     # Sidebar for user input
     i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
