@@ -38,7 +38,7 @@ def load_csv_data(df: pd.DataFrame):
     st.sidebar.download_button(
         "Download Barrier Data",
         csv,
-        "file.csv",
+        "barriers_oc.csv",
         "text/csv",
         key='download-csv'
     )
