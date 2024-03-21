@@ -114,11 +114,12 @@ def main():
     # Get age Distribution and create figure
     age_distribution = BARRIERS.barriers['age'].value_counts().sort_index().reset_index()
     age_distribution.columns = ['age', 'count']
-    fig_age = px.bar(age_distribution, x='age', y='count',
-                    title='Age Distribution',
-                    labels={'age': 'Age', 'count': 'Count'},
-                    hover_data=['age', 'count'],
-                    category_orders={"age": list(range(26))})
+    fig_age = px.histogram(age_distribution, x='age', y='count',
+                           title='Age Distribution',
+                           labels={'age': 'Age', 'count': 'Count'},
+                           hover_data=['age', 'count'],
+                           category_orders={"age": list(range(26))},
+                           nbins=20)
 
     # Streamlit App Title (App components starts here)
     st.title('Orange County Healthcare Barriers for Children w/ IDD/MH')
