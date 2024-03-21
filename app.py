@@ -123,6 +123,9 @@ def main():
     # Streamlit App Title (App components starts here)
     st.title('Orange County Healthcare Barriers for Children w/ IDD/MH')
 
+    st.markdown("[More information and context about this data.](https://github.com/jairus-m/barrierLog/blob/master/README.md)")
+
+
     # Link to Barrier Log
     st.sidebar.markdown("[Barrier Log Link](https://form.jotform.com/240215836883158)")
 
@@ -144,7 +147,7 @@ def main():
 
     st.plotly_chart(fig_solution, use_container_width=True)
 
-    st.dataframe(BARRIERS.barriers) 
+    st.dataframe(BARRIERS.barriers)
 
     # Load button in sidebar
     load_csv_data(BARRIERS.barriers)
