@@ -29,9 +29,10 @@ class TestBarrierData(unittest.TestCase):
 
     def test_Cols(self):
         result = list(x.data.columns)
-        cols = ['date_referred', 'referring_org', 'referring_staff', 'staff_email',
-                'staff_phone','family_contact', 'family_address', 'family_phone',
-                'family_email', 'barrier_memo', 'barrier_list', 'barrier_solution','solution_path']
+        cols = ['date', 'submission_type', 'age', 'sex', 'ethnicity', 'barrier_description', 'barrier_list', 
+                     'barrier_cause', 'barrier_solution', 'solution_path', 'referring_org', 
+                     'referring_staff', 'staff_email', 'staff_phone','family_contact', 'family_address', 
+                     'family_phone', 'family_email','zipcode']
         self.assertEqual(result, cols)
 
     def test_UpdateData(self):
