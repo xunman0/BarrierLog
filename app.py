@@ -60,7 +60,7 @@ def display_top_barriers(i: int, barriers: BarrierReferralData,col: str = 'barri
 
 def display_city_distribution(i: int, barriers: BarrierReferralData):
     """
-    Display the distribution of cities based on the number of barriers.
+    Display the distribution of cities.
 
     Args:
         i (int): Number of cities to display in the distribution.
@@ -75,6 +75,22 @@ def display_city_distribution(i: int, barriers: BarrierReferralData):
                     labels={'zipcode': 'City', 'count': 'Count'})
     st.plotly_chart(fig_city, use_container_width=True)
 
+def display_solution_pathways(i: int, barriers: BarrierReferralData):
+    """
+    Display the counts of Solution Pathways based.
+
+    Args:
+        i (int): Number of solution paths to display in the bar graph.
+        barriers: BarrierReferralData class object.
+    Returns:
+        None
+    """
+    top_solution_data = BARRIERS.topValues('solution_path', 10)[:i]
+    fig_solution = px.bar(top_solution_data, x=top_solution_data.index, y=top_solution_data.values,
+                        labels={'y': 'Count', 'index': ' '},
+                        title='Top Solution Pathways')
+    st.plotly_chart(fig_solution, use_container_width=True)
+
 def main():
     """
     Main function that builds Streamlit app.
@@ -84,14 +100,8 @@ def main():
     Returns:
         None
     """
-    # Load data and update if necessary
+    # Load and update data
     BARRIERS.updateData()
-
-    # Get top Solution Pathways and create figure
-    top_solution_data = BARRIERS.topValues('solution_path', 10)
-    fig_solution = px.bar(top_solution_data, x=top_solution_data.index, y=top_solution_data.values,
-                        labels={'y': 'Count', 'index': ' '}, 
-                        title='Top Solution Pathways')
 
     # Get ethnicity Distribution and create figure
     ethnicity_counts = BARRIERS.barriers['ethnicity'].value_counts().reset_index()
@@ -102,7 +112,7 @@ def main():
                         hole=0.3)
     fig_ethnicity.update_traces(textinfo='percent+label', pull=[0.1] * len(ethnicity_counts))
 
-    # Get sex Distribution and create figure
+    # Get sex ratio and create figure
     sex_counts = BARRIERS.barriers['sex'].value_counts().reset_index()
     sex_counts.columns = ['sex', 'count']
     fig_sex = px.pie(sex_counts, names='sex', values='count',
@@ -111,7 +121,7 @@ def main():
                     hole=0.3)
     fig_sex.update_traces(textinfo='percent+label', pull=[0.1] * len(sex_counts))
 
-    # Get age Distribution and create figure
+    # Get age distribution and create figure
     age_distribution = BARRIERS.barriers['age'].value_counts().sort_index().reset_index()
     age_distribution.columns = ['age', 'count']
     fig_age = px.histogram(age_distribution, x='age', y='count',
@@ -130,10 +140,12 @@ def main():
     
 
     # Sidebar for user input
-    i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=10)
-    i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=10)
+    i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=5)
+    i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=5)
+    i_solution_path = st.sidebar.number_input("Filter Solution Path", min_value=1, value=5)
 
-    # Display top barriers
+    # all figures plotted below
+
     display_top_barriers(i, BARRIERS)
 
     st.plotly_chart(fig_ethnicity, use_container_width=True)
@@ -142,12 +154,11 @@ def main():
 
     st.plotly_chart(fig_age, use_container_width=True)
 
-    # Display city distribution
     display_city_distribution(i_city, BARRIERS)
 
-    st.plotly_chart(fig_solution, use_container_width=True)
+    display_solution_pathways(i_solution_path, BARRIERS)
 
-    st.dataframe(BARRIERS.barriers)
+    st.dataframe(BARRIERS.barriers.drop(columns=['date']))
 
     # Load button in sidebar
     load_csv_data(BARRIERS.barriers)
