@@ -98,8 +98,9 @@ class BarrierReferralData():
         """
         api_key = API_KEY
         form_ID = FORM_ID
+        limit = 1000
 
-        api_url_submissions = f'https://hipaa-api.jotform.com/form/{form_ID}/submissions?apiKey={api_key}'
+        api_url_submissions = f'https://hipaa-api.jotform.com/form/{form_ID}/submissions?apiKey={api_key}&limit={limit}'
 
 
         # Make a GET request to the API
