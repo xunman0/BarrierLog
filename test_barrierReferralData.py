@@ -1,7 +1,7 @@
 from barrierReferralData import BarrierReferralData
 import unittest
 
-x = BarrierReferralData()
+X = BarrierReferralData()
 
 class TestBarrierData(unittest.TestCase):
     """
@@ -15,21 +15,21 @@ class TestBarrierData(unittest.TestCase):
     """
     def test_Response(self):
         # success message
-        result = x.response['message']
+        result = X.response['message']
         self.assertEqual(result, 'success')
 
         # 200 code
-        result = x.response['message']
+        result = X.response['message']
         self.assertEqual(result, 'success')
 
     def test_ActiveEntires(self):
         # num of active entires
-        result = x.meta['active_entries']
-        active_entries = len([x.response['content'][i]['status'] for i in range(len(x.response['content'])) if x.response['content'][i]['status'] == 'ACTIVE'])
+        result = X.meta['active_entries']
+        active_entries = len([X.response['content'][i]['status'] for i in range(len(X.response['content'])) if X.response['content'][i]['status'] == 'ACTIVE'])
         self.assertEqual(result, active_entries)
 
     def test_Cols(self):
-        result = list(x.data.columns)
+        result = list(X.data.columns)
         cols = ['date', 'submission_type', 'age', 'sex', 'ethnicity', 'barrier_description', 'barrier_list', 
                      'barrier_cause', 'barrier_solution', 'solution_path', 'referring_org', 
                      'referring_staff', 'staff_email', 'staff_phone','family_contact', 'family_address', 
@@ -38,13 +38,13 @@ class TestBarrierData(unittest.TestCase):
 
     def test_UpdateData(self):
         # save orignal limit left
-        original_limit = x.meta['limit_left']
+        original_limit = X.meta['limit_left']
 
         # update the data
-        x.updateData()
+        X.updateData()
 
         # save the new updated limit
-        new_limit = x.meta['limit_left']
+        new_limit = X.meta['limit_left']
 
         self.assertEqual(original_limit-new_limit, 1)
 
@@ -52,8 +52,8 @@ class TestBarrierData(unittest.TestCase):
         address_one = '1106 N Aspen Ave Eastvale, CA, 92880'
         address_two = 'Cherry St 92831 Ojai, CA'
 
-        zipcode_one = x._extractZipcode(address_one)
-        zipcode_two = x._extractZipcode(address_two)
+        zipcode_one = X._extractZipcode(address_one)
+        zipcode_two = X._extractZipcode(address_two)
 
         self.assertEqual(zipcode_one, '92880')
         self.assertEqual(zipcode_two, '92831')
