@@ -11,6 +11,7 @@ class TestBarrierData(unittest.TestCase):
         test_ActiveEntires : tests for correct amount of active entires
         test_Cols : test to make sure the pandas dataframe contains the correct columns
         test_UpdateData : tests for correct functionality of updateData()
+        test_ExtractZipcode : tests for correct zipcode extraction of _extractZipcode()
     """
     def test_Response(self):
         # success message
@@ -46,6 +47,16 @@ class TestBarrierData(unittest.TestCase):
         new_limit = x.meta['limit_left']
 
         self.assertEqual(original_limit-new_limit, 1)
+
+    def test_ExtractZipcode(self):
+        address_one = '1106 N Aspen Ave Eastvale, CA, 92880'
+        address_two = 'Cherry St 92831 Ojai, CA'
+
+        zipcode_one = x._extractZipcode(address_one)
+        zipcode_two = x._extractZipcode(address_two)
+
+        self.assertEqual(zipcode_one, '92880')
+        self.assertEqual(zipcode_two, '92831')
+
 if __name__ == '__main__':
-    
     unittest.main()
