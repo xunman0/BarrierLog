@@ -58,6 +58,7 @@ class BarrierReferralData():
         _parseFamily : parses the data related to the family contact
         _parseBarrierLog : parases the data related to barrier incidents
         _formatSubmissionTypeCol: Asserts/formats the three submission types: ['Barrier Log', 'Self-Referral', 'Organization Referral]
+        _extractZipcode: Extract zipcode via regex from family address field
     """
     def __init__(self):
         """
@@ -185,42 +186,23 @@ class BarrierReferralData():
             if data['content'][i]['status'] == 'ACTIVE':
                 # form_i is the JSON object object containg all data of form i
                 form_i = data['content'][i]['answers']
-
                 # submission type
                 submission_type = form_i[self.index_field_key['submission_type_i']].get('answer', pd.NA)
-
                 # date
                 date_referred = form_i[self.index_field_key['date_i']].get('prettyFormat', pd.NA)
                 logging.debug(f'Added date : {date_referred}', )
-
                 # parse organization data
                 referring_org, referring_staff, staff_email, staff_phone = self._parseReferrringOrg(i, date_referred)
-
                 # parse family data
                 family_contact, family_address, family_phone, family_email = self._parseFamily(i, date_referred)
-
                 # parse barrier log data
                 barrier_description, barrier_list, barrier_cause, barrier_solution, solution_path = self._parseBarrierLog(i, date_referred)
-
                 # parse demographic data
                 zipcode, age, sex, ethnicity = self._parseDemographics(i, date_referred)
-
-                # extract zipcodes from family address
-                if pd.isna(zipcode) == True and pd.isna(family_address) == False:
-                    # zipcode general pattern
-                    pattern = r'^\d{5}(?:-\d{4})?$'
-                    family_address_zipcode = family_address[-5:]
-                    # does the extracted zipcode match the pattern?
-                    if bool(re.match(pattern, family_address_zipcode)):
-                        zipcode = family_address_zipcode
-                    # if not, look for any string that matches the 9**** pattern in the address
-                    else: 
-                      # zipcode pattern with start num as 9
-                      pattern = r'\b9\d{4}(?:-\d{4})?\b'
-                      match = re.search(pattern, family_address)
-                      zipcode = match.group()
-
                 
+                if pd.isna(zipcode) == True and pd.isna(family_address) == False:
+                    zipcode = self._extractZipcode(family_address)
+
                 # create tuple for data
                 row = [date_referred, submission_type, age, sex, ethnicity, barrier_description, barrier_list, 
                        barrier_cause, barrier_solution, solution_path, referring_org, 
@@ -487,3 +469,28 @@ class BarrierReferralData():
         return pd.Series([x if x in correct_values else 'Self-Referral' for x in mapped])
 
 
+    def _extractZipcode(self, family_address : str):
+        """
+        Extract zipcode via regex from family address field if
+        zipcde from _parseDemographics() is null.
+
+        Args:
+            family_adress: family_adress from._parseFamily()
+        Returns:
+            zipcode: zipcode string
+        """
+        # extract zipcodes from family address
+        # zipcode general pattern
+        pattern = r'^\d{5}(?:-\d{4})?$'
+        family_address_zipcode = family_address[-5:]
+        # does the extracted zipcode match the pattern?
+        if bool(re.match(pattern, family_address_zipcode)):
+            zipcode = family_address_zipcode
+        # if not, look for any string that matches the 9**** pattern in the address
+        else: 
+            # zipcode pattern with start num as 9
+            pattern = r'\b9\d{4}(?:-\d{4})?\b'
+            match = re.search(pattern, family_address)
+            zipcode = match.group()
+
+        return zipcode
