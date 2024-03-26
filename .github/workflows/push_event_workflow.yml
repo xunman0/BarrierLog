@@ -10,8 +10,11 @@ jobs:
     - name : Checkout code
       uses : actions/checkout@v2
       
-    # - name : Install Packages 
-    #   run : pip install unittest
+    - name : Install pipenv 
+      run : pip install pipenv
+
+    - name : Install dependencies
+      run :  pipenv install
       
     - name : Run tests 
-      run : python test_barrierReferralData.py
+      run : pipenv run python test_barrierReferralData.py
