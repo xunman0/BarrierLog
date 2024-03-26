@@ -14,4 +14,4 @@ jobs:
     #   run : pip install unittest
       
     - name : Run tests 
-      run : pytest test_barrierReferralData.py
+      run : python test_barrierReferralData.py
