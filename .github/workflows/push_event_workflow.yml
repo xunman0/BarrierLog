@@ -1,4 +1,4 @@
-name: Push Event Workflow
+name: Push Event Workflow for Testing
 
 on: push 
 
