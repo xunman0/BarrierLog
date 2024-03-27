@@ -13,8 +13,13 @@ JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Fam
                   'Solution to Barrier (optional)', 'Solution Pathway to Barrier (optional)', 
                   'Referring Staff Email', 'Referring Staff Phone Number', 'Submission Type',
                     'Age', 'Sex', 'Ethnicity', 'Zipcode']
-API_KEY = st.secrets["API_KEY"]
-FORM_ID = st.secrets["FORM_ID"]
+
+try:
+    API_KEY = st.secrets["API_KEY"]
+    FORM_ID = st.secrets["FORM_ID"]
+except:
+    API_KEY = os.getenv("API_KEY")
+    FORM_ID = os.getenv("FORM_ID")
 
 
 
