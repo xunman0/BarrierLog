@@ -21,11 +21,12 @@ jobs:
 
     - name : Install dependencies
       run :  pipenv install
-
-    - name: Set secrets as environment variables
+      
+    - name: Run tests 
+      run: |
+        API_KEY="${{ secrets.API_KEY }}"
+        FORM_ID="${{ secrets.FORM_ID }}"
+        pipenv run python test_barrierReferralData.py
       env:
         API_KEY: ${{ secrets.API_KEY }}
         FORM_ID: ${{ secrets.FORM_ID }}
-      
-    - name : Run tests 
-      run : pipenv run python test_barrierReferralData.py
