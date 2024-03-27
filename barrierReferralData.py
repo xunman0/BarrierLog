@@ -15,9 +15,11 @@ JOTFORM_FIELDS = ['Date', 'Referring Organization', 'Referring Staff Name', 'Fam
                     'Age', 'Sex', 'Ethnicity', 'Zipcode']
 
 try:
+    # secrets stored in Streamlit
     API_KEY = st.secrets["API_KEY"]
     FORM_ID = st.secrets["FORM_ID"]
 except:
+    # secrets used from env for GitHub Actions CI/CD
     API_KEY = os.getenv("API_KEY")
     FORM_ID = os.getenv("FORM_ID")
 
