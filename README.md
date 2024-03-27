@@ -25,7 +25,7 @@ a quantifiable way while also referring families to our advocacy group
 
 # Barrier Log Data
 barrierReferralData.py:
-- Contains the BarrierReferralData class which makes a call to the Jotform API, downloads the data, parses it, and stores the data in a pandas dataframe. It includes helper functions to parse the data and class methods that aid in analysis, updating data, and retreiving meta data on the API/JSON response.
+- Contains the BarrierReferralData class which makes a call to the Jotform API, downloads the unstructured JSON data, parses it, and stores the data in a structured Pandas dataframe. It includes helper functions to parse the data and class methods that aid in analysis, updating data, and retreiving meta data on the API/JSON response.
 
 # Streamlit App
 app.py: 
