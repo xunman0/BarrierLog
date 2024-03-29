@@ -144,7 +144,10 @@ def main():
                            nbins=20)
 
     # Streamlit App Title (App components starts here)
-    st.title('Orange County Healthcare Barriers for Children w/ IDD/MH')
+    st.title('Advocacy for People with Disabilities:')
+    st.markdown("""
+               Reported barriers of families with children with a co-occurring or suspected IDD or Mental Health Diagnosis in Orange County
+               """)
 
     # Link to Barrier Log
     st.sidebar.markdown("[Barrier Log Link](https://form.jotform.com/240215836883158)")
@@ -156,7 +159,20 @@ def main():
     i_city = st.sidebar.number_input("Filter City Count", min_value=1, max_value=CITY_COUNTS['zipcode'].count(), value=5)
     i_solution_path = st.sidebar.number_input("Filter Solution Path", min_value=1, max_value=BARRIERS.topValues('solution_path', 1000).count(), value=5)
 
+
+
     # all figures plotted below
+
+    col1, col2 = st.columns(2)
+     # Barriers Reported KPI card
+    with col1:
+        st.subheader("Barriers Reported")
+        st.metric(label='Total Count', value=BARRIERS.topValues('barrier_list', 10000).sum())
+
+    # Barriers Identified KPI card
+    with col2:
+        st.subheader("Barriers Identified")
+        st.metric(label='Unique Count', value=BARRIERS.topValues('barrier_list', 10000).count())
 
     display_top_barriers(i, BARRIERS)
 
