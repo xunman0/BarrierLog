@@ -43,7 +43,7 @@ def load_csv_data(df: pd.DataFrame):
         key='download-csv'
     )
 
-def display_top_barriers(i: int, barriers: BarrierReferralData,col: str = 'barrier_list'):
+def display_top_barriers(i: int, barriers: BarrierReferralData, col: str = 'barrier_list'):
     """
     Display the top barriers based on the specified column.
     
@@ -58,30 +58,40 @@ def display_top_barriers(i: int, barriers: BarrierReferralData,col: str = 'barri
     st.write(f'##### Top {i} Barriers')
     st.write(top_values)
 
-def display_city_distribution(i: int, barriers: BarrierReferralData):
+def city_counts():
+    """
+    Returns the City names and their respective counts.
+
+    Args:
+        None:
+    Returns: 
+        city_counts (pd.DataFrame) : dataframe containing unique cities and their counts
+    """
+    return BARRIERS.barriers['zipcode'].apply(zco).astype('string').value_counts().reset_index()
+
+def display_city_distribution(i: int, city_counts: pd.DataFrame):
     """
     Display the distribution of cities.
 
     Args:
         i (int): Number of cities to display in the distribution.
-        barriers: BarrierReferralData class object.
+        city_counts (pd.DataFrame): df containing city counts
     Returns:
         None
     """
-    city_counts = barriers.barriers['zipcode'].apply(zco).astype('string').value_counts().reset_index()[:i]
-    city_counts.columns = ['zipcode', 'count']
-    fig_city = px.bar(city_counts, x='zipcode', y='count',
+    city_counts_i = city_counts[:i]
+    city_counts_i.columns = ['zipcode', 'count']
+    fig_city = px.bar(city_counts_i, x='zipcode', y='count',
                     title='City Distribution',
                     labels={'zipcode': 'City', 'count': 'Count'})
     st.plotly_chart(fig_city, use_container_width=True)
 
-def display_solution_pathways(i: int, barriers: BarrierReferralData):
+def display_solution_pathways(i: int):
     """
     Display the counts of Solution Pathways based.
 
     Args:
         i (int): Number of solution paths to display in the bar graph.
-        barriers: BarrierReferralData class object.
     Returns:
         None
     """
@@ -90,6 +100,8 @@ def display_solution_pathways(i: int, barriers: BarrierReferralData):
                         labels={'y': 'Count', 'index': ' '},
                         title='Top Solution Pathways')
     st.plotly_chart(fig_solution, use_container_width=True)
+
+CITY_COUNTS = city_counts()
 
 def main():
     """
@@ -140,9 +152,9 @@ def main():
     
 
     # Sidebar for user input
-    i = st.sidebar.number_input("Filter Barrier Count", min_value=1, value=5)
-    i_city = st.sidebar.number_input("Filter City Count", min_value=1, value=5)
-    i_solution_path = st.sidebar.number_input("Filter Solution Path", min_value=1, value=5)
+    i = st.sidebar.number_input("Filter Barrier Count", min_value=1, max_value=BARRIERS.topValues('barrier_list', 1000).count(), value=5)
+    i_city = st.sidebar.number_input("Filter City Count", min_value=1, max_value=CITY_COUNTS['zipcode'].count(), value=5)
+    i_solution_path = st.sidebar.number_input("Filter Solution Path", min_value=1, max_value=BARRIERS.topValues('solution_path', 1000).count(), value=5)
 
     # all figures plotted below
 
@@ -154,9 +166,9 @@ def main():
 
     st.plotly_chart(fig_age, use_container_width=True)
 
-    display_city_distribution(i_city, BARRIERS)
+    display_city_distribution(i_city, city_counts=CITY_COUNTS)
 
-    display_solution_pathways(i_solution_path, BARRIERS)
+    display_solution_pathways(i_solution_path)
 
     st.dataframe(BARRIERS.barriers.drop(columns=['date']))
 
