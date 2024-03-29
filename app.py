@@ -186,6 +186,8 @@ def main():
 
     display_solution_pathways(i_solution_path)
 
+
+    st.subheader(f"Raw Data (n = {len(BARRIERS.barriers)})")
     st.dataframe(BARRIERS.barriers.drop(columns=['date']))
 
     # Load button in sidebar
