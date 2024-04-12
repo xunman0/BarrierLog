@@ -56,16 +56,16 @@ class BarrierReferralData():
         topValues : takes _masterList() and returns a pd.Series with the top i values
         latestDate : returns the most recent date in the data
         info : creates meta data dict object and loads into self.meta
-        _callAPI : calls Jotform API to load data as a JSON object
-        _loadData : loads csv data and if not present, will call updateData()
-        _createIndexFieldKey : creates the jotform_field_i : string_integer key-value pair that is necessary for dynamic parsing
-        _masterList : creates a single list of values from a column of lists
-        _parseAddress : uses regex to parse address data in json object
-        _parseReferringOrg : parses the data related to the referral organization
-        _parseFamily : parses the data related to the family contact
-        _parseBarrierLog : parases the data related to barrier incidents
-        _formatSubmissionTypeCol: Asserts/formats the three submission types: ['Barrier Log', 'Self-Referral', 'Organization Referral]
-        _extractZipcode: Extract zipcode via regex from family address field
+        __callAPI : calls Jotform API to load data as a JSON object
+        __loadData : loads csv data and if not present, will call updateData()
+        __createIndexFieldKey : creates the jotform_field_i : string_integer key-value pair that is necessary for dynamic parsing
+        __masterList : creates a single list of values from a column of lists
+        __parseAddress : uses regex to parse address data in json object
+        __parseReferringOrg : parses the data related to the referral organization
+        __parseFamily : parses the data related to the family contact
+        __parseBarrierLog : parases the data related to barrier incidents
+        __formatSubmissionTypeCol: Asserts/formats the three submission types: ['Barrier Log', 'Self-Referral', 'Organization Referral]
+        __extractZipcode: Extract zipcode via regex from family address field
     """
     def __init__(self):
         """
@@ -78,7 +78,7 @@ class BarrierReferralData():
         self.barriers = self.barrierData()
         self.latestDate = self.latestDate()
 
-    def _loadData(self):
+    def __loadData(self):
         """
         This method loads the csv data into the self.data attribute and if the 
         csv is not present, will call updateData() (only called when class is instantiated).
@@ -96,7 +96,7 @@ class BarrierReferralData():
 
         return data
 
-    def _callAPI(self):
+    def __callAPI(self):
         """
         This method makes an API call to Jotform and returns a JSON object.
         Args:
@@ -125,7 +125,7 @@ class BarrierReferralData():
 
         return data
     
-    def _createIndexFieldKey(self, data):
+    def __createIndexFieldKey(self, data):
         """
         This method creates the self.index_field_key to reference which jotform fields
         match up to which numeric keys. This allows dynamic parsing.
@@ -266,7 +266,7 @@ class BarrierReferralData():
         """
         return self.data['date'].sort_values(ascending=False)[0]
     
-    def _masterList(self, col : str):
+    def __masterList(self, col : str):
         """
         Reads in a column from a dataframe and returns a combined list. The col choices are 'barrier_list'
         or 'solution_path' since they are the only multiple choices.
@@ -283,7 +283,7 @@ class BarrierReferralData():
                 master_list.extend(row.split(';'))
         return master_list
             
-    def _parseAddress(self, i : int):
+    def __parseAddress(self, i : int):
         """
         This helper function parses the address from JSON response data. Does not validate
         the addresses themselves.
@@ -314,7 +314,7 @@ class BarrierReferralData():
         else:
             return address_text
         
-    def _parseReferrringOrg(self, i : int, date_referred : str):
+    def __parseReferrringOrg(self, i : int, date_referred : str):
         """
         This helper function parses the referring org name, staff name,
         staff email, and staff phone number.
@@ -348,7 +348,7 @@ class BarrierReferralData():
 
         return referring_org, referring_staff, staff_email, staff_phone
     
-    def _parseFamily(self, i : int, date_referred : str):
+    def __parseFamily(self, i : int, date_referred : str):
         """
         This helper function parses the family data.
         Args:
@@ -380,7 +380,7 @@ class BarrierReferralData():
 
         return family_contact, family_address, family_phone, family_email
     
-    def _parseBarrierLog(self, i : int, date_referred : str):
+    def __parseBarrierLog(self, i : int, date_referred : str):
         """
         This helper function parses the barrier log data.
         Args:
@@ -416,7 +416,7 @@ class BarrierReferralData():
 
         return barrier_description, barrier_list, barrier_cause, barrier_solution, solution_path
     
-    def _parseDemographics(self, i : int, date_referred : str):
+    def __parseDemographics(self, i : int, date_referred : str):
         """
         This helper function parses the demographic (Zipcode/Sex/Ethnicity) from JSON response data. 
         Args:
@@ -454,7 +454,7 @@ class BarrierReferralData():
 
         return zipcode, age, sex, ethnicity
     
-    def _formatSubmissionTypeCol(self, submission_type_col: pd.Series):
+    def __formatSubmissionTypeCol(self, submission_type_col: pd.Series):
         """
         Asserts/formats the three submission types: ['Barrier Log', 'Self-Referral', 'Organization Referral]
 
@@ -476,7 +476,7 @@ class BarrierReferralData():
         return pd.Series([x if x in correct_values else 'Self-Referral' for x in mapped])
 
 
-    def _extractZipcode(self, family_address : str):
+    def __extractZipcode(self, family_address : str):
         """
         Extract zipcode via regex from family address field if
         zipcde from _parseDemographics() is null.
