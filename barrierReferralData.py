@@ -501,3 +501,4 @@ class BarrierReferralData():
             zipcode = match.group()
 
         return zipcode
+
