@@ -52,8 +52,8 @@ class TestBarrierData(unittest.TestCase):
         address_one = '1106 N Aspen Ave Eastvale, CA, 92880'
         address_two = 'Cherry St 92831 Ojai, CA'
 
-        zipcode_one = X._extractZipcode(address_one)
-        zipcode_two = X._extractZipcode(address_two)
+        zipcode_one = X._BarrierReferralData__extractZipcode(address_one)
+        zipcode_two = X._BarrierReferralData__extractZipcode(address_two)
 
         self.assertEqual(zipcode_one, '92880')
         self.assertEqual(zipcode_two, '92831')
