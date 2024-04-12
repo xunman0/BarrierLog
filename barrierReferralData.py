@@ -71,9 +71,9 @@ class BarrierReferralData():
         """
         Constructor with no args.
         """
-        self.data = self._loadData()
-        self.response = self._callAPI()
-        self.index_field_key = self._createIndexFieldKey(self.response)
+        self.data = self.__loadData()
+        self.response = self.__callAPI()
+        self.index_field_key = self.__createIndexFieldKey(self.response)
         self.meta = self.info()
         self.barriers = self.barrierData()
         self.latestDate = self.latestDate()
@@ -175,9 +175,9 @@ class BarrierReferralData():
             df (pandas.dataframe) : data containing clean form responses
         """
         # call jotform API
-        self.response = self._callAPI()
+        self.response = self.__callAPI()
         data = self.response
-        self.index_field_key = self._createIndexFieldKey(data)
+        self.index_field_key = self.__createIndexFieldKey(data)
 
         # update meta attribute
         self.meta = self.info()
@@ -199,16 +199,16 @@ class BarrierReferralData():
                 date_referred = form_i[self.index_field_key['date_i']].get('prettyFormat', pd.NA)
                 logging.debug(f'Added date : {date_referred}', )
                 # parse organization data
-                referring_org, referring_staff, staff_email, staff_phone = self._parseReferrringOrg(i, date_referred)
+                referring_org, referring_staff, staff_email, staff_phone = self.__parseReferrringOrg(i, date_referred)
                 # parse family data
-                family_contact, family_address, family_phone, family_email = self._parseFamily(i, date_referred)
+                family_contact, family_address, family_phone, family_email = self.__parseFamily(i, date_referred)
                 # parse barrier log data
-                barrier_description, barrier_list, barrier_cause, barrier_solution, solution_path = self._parseBarrierLog(i, date_referred)
+                barrier_description, barrier_list, barrier_cause, barrier_solution, solution_path = self.__parseBarrierLog(i, date_referred)
                 # parse demographic data
-                zipcode, age, sex, ethnicity = self._parseDemographics(i, date_referred)
+                zipcode, age, sex, ethnicity = self.__parseDemographics(i, date_referred)
                 
                 if pd.isna(zipcode) == True and pd.isna(family_address) == False:
-                    zipcode = self._extractZipcode(family_address)
+                    zipcode = self.__extractZipcode(family_address)
 
                 # create tuple for data
                 row = [date_referred, submission_type, age, sex, ethnicity, barrier_description, barrier_list, 
@@ -220,7 +220,7 @@ class BarrierReferralData():
         # create pandas dataframe from list of tuples
         df = pd.DataFrame(csv_data[1:], columns=csv_data[0])
 
-        df['submission_type'] = self._formatSubmissionTypeCol(df['submission_type'])
+        df['submission_type'] = self.__formatSubmissionTypeCol(df['submission_type'])
 
         # write df to csv file
         df.to_csv('barrierReferralData.csv', index=False) 
@@ -253,7 +253,7 @@ class BarrierReferralData():
             pandas.Series : top i occuring values in ['barrier_list', 'solution_path']
         """
         df = self.barriers
-        return pd.Series(self._masterList(col)).value_counts().head(int(i))
+        return pd.Series(self.__masterList(col)).value_counts().head(int(i))
     
     def latestDate(self):
         """
@@ -367,7 +367,7 @@ class BarrierReferralData():
         logging.debug(f'Added family contacat from form : {date_referred}')
 
         # address
-        family_address = self._parseAddress(i)
+        family_address = self.__parseAddress(i)
         logging.debug(f'Added address from form : {date_referred}')
 
         # family phone
